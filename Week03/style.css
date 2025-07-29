@@ -1,0 +1,126 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Fonts */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #264969; /* Secondary */
+  padding: 1rem 2rem;
+}
+.logo {
+  height: 40px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #CFCFB4; /* Accent 1 */
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.hero h1 {
+  font-family: 'Georgia', serif; /* Heading Font */
+  font-size: 2.5rem;
+  color: #505033; /* Primary */
+  margin-bottom: 1rem;
+}
+.cta-button {
+  background-color: #505033; /* Primary */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Adventure Cards */
+.adventures {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.adventure-card {
+  text-align: center;
+  margin: 1rem;
+}
+.adventure-card img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.adventure-card p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  padding: 2rem;
+  background-color: #B4CDE4; /* Accent 2 */
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.newsletter img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.newsletter input {
+  padding: 0.5rem;
+}
+.newsletter button {
+  background-color: #264969; /* Secondary */
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #505033; /* Primary */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.socials {
+  margin-top: 0.5rem;
+}
+.socials img {
+  width: 24px;
+  margin: 0 8px;
+}
