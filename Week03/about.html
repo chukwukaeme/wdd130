@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>White Water Rafting</title>
+  <title>About Us | White Water Rafting</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
+  <!-- Header -->
+  <header class="header-purple">
     <nav class="navbar">
-      <img src="images/wwr.jpg" alt="White Water Rafting Logo" class="logo" />
+      <img src="images/logo.png" alt="White Water Rafting Logo" class="logo" />
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
@@ -22,34 +22,71 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h1>Have An Adventure!</h1>
-    <a href="trips.html" class="cta-button">Book with Us</a>
+  <section class="about-hero">
+    <h1>White Water Rafting</h1>
+    <p>Adventure, nature, and excitement — it's all here.</p>
   </section>
 
-  <!-- Adventure Options -->
-  <section class="adventures">
-    <div class="adventure-card">
-      <img src="images/swimming.jpeg" alt="Swimming">
-      <p>Swimming</p>
+  <!-- History Section -->
+  <section class="history">
+    <div class="history-text">
+      <h2>History</h2>
+      <p>
+        Our white water rafting company was established with one mission: to share the wild beauty of rivers with people from all walks of life.
+        What started as a small family-run outfit has grown into a leading adventure company with expert guides, top-tier equipment, and unforgettable tours.
+      </p>
     </div>
-    <div class="adventure-card">
-      <img src="images/camping.jpeg" alt="Camping">
-      <p>Camping</p>
-    </div>
-    <div class="adventure-card">
-      <img src="images/rapids.jpeg" alt="Rapids">
-      <p>Rapids</p>
-    </div>
-    <div class="adventure-card">
-    <img src="images/river adventure.jpeg" alt="River Adventure" />
-    <p>River Adventure</p>
+    <div class="history-img">
+      <img src="images/history.jpg" alt="Rafting History" />
     </div>
   </section>
 
+  <!-- Our Activities Section -->
+  <section class="activities">
+    <h2>Our Activities</h2>
+    <div class="activity-cards">
+      <div class="activity">
+        <img src="images/swimming.jpeg" alt="Swimming">
+        <p>Swimming</p>
+      </div>
+      <div class="activity">
+        <img src="images/camping.jpeg" alt="Camping">
+        <p>Camping</p>
+      </div>
+      <div class="activity">
+        <img src="images/rapids.jpeg" alt="Rapids">
+        <p>Rapids</p>
+      </div>
+     
+    </div>
+  </section>
+
+  <!-- Adventure Gallery Section -->
+  <section class="adventure-gallery">
+    <h2>Adventure Awaits You</h2>
+    <div class="gallery">
+      <div>
+        <img src="images/adventure1.jpeg" alt="Adventure 1">
+        <p>Riverside Relaxation</p>
+      </div>
+      <div>
+        <img src="images/adventure2.jpeg" alt="Adventure 2">
+        <p>Camping Under Stars</p>
+      </div>
+      <div>
+        <img src="images/adventure3.jpeg" alt="Adventure 3">
+        <p>Whitewater Thrills</p>
+      </div>
+      <div>
+        <img src="images/adventure4.jpeg" alt="Adventure 4">
+        <p>Guided Rafting Trips</p>
+      </div>
+    </div>
+  </section>
+  
   <!-- Newsletter Section -->
   <section class="newsletter">
-    
+    <img src="images/river adventure.jpeg" alt="River Adventure" />
     <form>
       <h2>Newsletter</h2>
       <label for="name">Name:</label>
