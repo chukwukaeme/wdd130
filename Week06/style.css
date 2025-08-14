@@ -1,0 +1,392 @@
+/* HEADER - CSS Grid */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #026aa7;
+  color: white;
+}
+
+header .logo {
+  height: 60px;
+}
+
+header h1 {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+}
+
+/* NAV - Flexbox */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+/* HISTORY SECTION */
+.history {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.history-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ADVENTURES SECTION */
+.adventures {
+  padding: 3rem 2rem;
+  background: #f4f4f4;
+}
+
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.adventure-gallery figure {
+  flex: 1 1 calc(20% - 1rem);
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+footer .socials {
+  display: flex;
+  gap: 0.5rem;
+}
+
+footer .socials img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Fonts */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #264969; /* Secondary */
+  padding: 1rem 2rem;
+}
+.logo {
+  height: 40px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #CFCFB4; /* Accent 1 */
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.hero h1 {
+  font-family: 'Georgia', serif; /* Heading Font */
+  font-size: 2.5rem;
+  color: #505033; /* Primary */
+  margin-bottom: 1rem;
+}
+.cta-button {
+  background-color: #505033; /* Primary */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Adventure Cards */
+.adventures {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.adventure-card {
+  text-align: center;
+  margin: 1rem;
+}
+.adventure-card img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.adventure-card p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  padding: 2rem;
+  background-color: #B4CDE4; /* Accent 2 */
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.newsletter img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.newsletter input {
+  padding: 0.5rem;
+}
+.newsletter button {
+  background-color: #264969; /* Secondary */
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #505033; /* Primary */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.socials {
+  margin-top: 0.5rem;
+}
+.socials img {
+  width: 24px;
+  margin: 0 8px;
+}
+
+/* COMPANY INFO */
+.company-info {
+  padding: 2rem;
+  background: #f4f4f4;
+}
+
+.map-container {
+  margin-top: 1rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* TEAM SECTION */
+.team {
+  padding: 2rem;
+}
+
+.team-members {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-members figure {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-members img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* CONTACT FORM */
+.contact-form {
+  padding: 2rem;
+  background: #eef5fa;
+}
+
+.contact-form form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.contact-form button {
+  background: #026aa7;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #014c78;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #004d40;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.3); /* 30% dark overlay */
+}
+
+.newsletter, .cta, .about-grid {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.about-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    background: #ff5722;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
